@@ -1,0 +1,12 @@
+{%extends 'base.html'%}
+
+{%block content%}
+<h3>Customer Form</h3>
+<hr>
+{{hello}}
+<form action="" method="post">
+    {% csrf_token %} 
+    {{form}}
+    <input type="submit">
+</form>
+{%endblock content%}
